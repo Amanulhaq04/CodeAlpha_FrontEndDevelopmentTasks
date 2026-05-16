@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Calcify | Premium Computation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Intro Page -->
+    <div id="intro-page" class="intro-page">
+        <div class="intro-container">
+            <div class="intro-left">
+                <div class="image-wrapper">
+                    <img src="calcify.png" alt="Premium Calculator Preview">
+                </div>
+            </div>
+            <div class="intro-right">
+                <div class="badge">Next-Gen Interface</div>
+                <h1>Nova <span>Calcify</span></h1>
+                <p class="description">
+                    Enter a world where calculation meets luxury. Nova Calcify is engineered with ultra-smooth performance, intelligent real-time computation, and a futuristic glassmorphism interface that redefines the modern calculator experience.
+                    <br><br>
+                    Crafted for creators, developers, and visionaries, every interaction feels fast, fluid, and premium.
+                </p>
+                <div class="features-list">
+                    <div class="feature-item">
+                        <span class="icon">✦</span>
+                        <span>Instant real-time calculations</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="icon">✦</span>
+                        <span>Futuristic glassmorphism interface</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="icon">✦</span>
+                        <span>Lightning-fast performance</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="icon">✦</span>
+                        <span>Seamless keyboard integration</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="icon">✦</span>
+                        <span>Elegant dark aesthetic</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="icon">✦</span>
+                        <span>Smooth premium animations</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="icon">✦</span>
+                        <span>Responsive across every device</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="icon">✦</span>
+                        <span>Minimal design with maximum experience</span>
+                    </div>
+                </div>
+                <button id="launch-btn" class="launch-btn">
+                    Launch Calculator
+                    <span class="arrow">→</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Calculator Page -->
+    <div id="calculator-page" class="calculator-page hidden">
+        <div class="calculator-container">
+            <div class="calculator-glass">
+                <div class="brand-name">Nova Calcify</div>
+                <div class="output">
+                    <div class="previous-operand" data-previous-operand></div>
+                    <div class="current-operand" data-current-operand>0</div>
+                </div>
+
+                <button class="span-two action-btn clear-btn" data-all-clear>AC</button>
+                <button class="action-btn del-btn" data-delete>DEL</button>
+                <button class="operator" data-operation>÷</button>
+
+                <button data-number>7</button>
+                <button data-number>8</button>
+                <button data-number>9</button>
+                <button class="operator" data-operation>×</button>
+
+                <button data-number>4</button>
+                <button data-number>5</button>
+                <button data-number>6</button>
+                <button class="operator" data-operation>−</button>
+
+                <button data-number>1</button>
+                <button data-number>2</button>
+                <button data-number>3</button>
+                <button class="operator" data-operation>+</button>
+
+                <button data-number>.</button>
+                <button data-number>0</button>
+                <button class="span-two equals-btn" data-equals>=</button>
+            </div>
+            <button id="back-btn" class="back-btn">← Back to Intro</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

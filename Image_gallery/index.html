@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Outfit:wght@300;400;600;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Background Elements for Premium Look -->
+    <div class="bg-glow"></div>
+
+    <header class="header">
+        <div class="hero-content">
+            <h1 class="reveal-text">Image Gallery</h1>
+            <p class="tagline">transporting souls to a world of creativity</p>
+            <div class="hero-description">
+                We house an impressive selection of fine art to cater to different sensibilities and tastes.
+                Discover our extensive fine art collection by browsing through our different collections below.
+            </div>
+            <button class="explore-btn">Explore →</button>
+        </div>
+        <div class="hero-image-container">
+            <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=1200&q=80"
+                alt="Masterpiece" class="hero-img">
+        </div>
+    </header>
+
+    <div class="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="nature">Nature</button>
+        <button class="filter-btn" data-filter="architecture">Architecture</button>
+        <button class="filter-btn" data-filter="abstract">Abstract</button>
+    </div>
+
+    <main class="gallery-container">
+        <div class="gallery-item featured" data-category="nature">
+            <!-- Ensure robust image paths and add fallback -->
+            <img src="https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?auto=format&fit=crop&w=800&q=80"
+                onerror="this.src='https://picsum.photos/seed/naturex1/800/1200'" alt="Nature landscape" loading="lazy">
+            <div class="overlay">
+                <span>Misty Mountains</span>
+            </div>
+        </div>
+        <div class="gallery-item" data-category="nature">
+            <img src="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?auto=format&fit=crop&w=800&q=80"
+                onerror="this.src='https://picsum.photos/seed/naturex2/800/600'" alt="Forest path" loading="lazy">
+            <div class="overlay">
+                <span>Deep Forest</span>
+            </div>
+        </div>
+        <div class="gallery-item wide" data-category="architecture">
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80"
+                onerror="this.src='https://picsum.photos/seed/archx1/1200/600'" alt="Modern building" loading="lazy">
+            <div class="overlay">
+                <span>Concrete Jungle</span>
+            </div>
+        </div>
+        <div class="gallery-item" data-category="architecture">
+            <img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=800&q=80"
+                onerror="this.src='https://picsum.photos/seed/archx2/800/600'" alt="Skyscraper" loading="lazy">
+            <div class="overlay">
+                <span>Glass Heights</span>
+            </div>
+        </div>
+        <div class="gallery-item featured" data-category="abstract">
+            <img src="https://images.unsplash.com/photo-1614850523459-c2f4c699c52e?auto=format&fit=crop&w=800&q=80"
+                onerror="this.src='https://picsum.photos/seed/absx1/800/1200'" alt="Abstract fluid" loading="lazy">
+            <div class="overlay">
+                <span>Neon Fluid</span>
+            </div>
+        </div>
+        <div class="gallery-item" data-category="abstract">
+            <img src="https://images.unsplash.com/photo-1567095761054-7a02e69e5c43?auto=format&fit=crop&w=800&q=80"
+                onerror="this.src='https://picsum.photos/seed/absx2/800/600'" alt="Abstract waves" loading="lazy">
+            <div class="overlay">
+                <span>Digital Waves</span>
+            </div>
+        </div>
+        <div class="gallery-item" data-category="nature">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80"
+                onerror="this.src='https://picsum.photos/seed/naturex3/800/600'" alt="Mountain lake" loading="lazy">
+            <div class="overlay">
+                <span>Silent Lake</span>
+            </div>
+        </div>
+        <div class="gallery-item wide" data-category="architecture">
+            <img src="https://images.unsplash.com/photo-1470723710355-95304d8aece4?auto=format&fit=crop&w=1200&q=80"
+                onerror="this.src='https://picsum.photos/seed/archx3/1200/600'" alt="Bridge at night" loading="lazy">
+            <div class="overlay">
+                <span>Golden Bridge</span>
+            </div>
+        </div>
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <button class="close-btn" id="closeLightbox">&times;</button>
+        <button class="nav-btn prev-btn" id="prevBtn">&#10094;</button>
+        <div class="lightbox-content">
+            <img src="" alt="Lightbox Image" id="lightboxImg">
+            <div class="lightbox-caption" id="lightboxCaption"></div>
+        </div>
+        <button class="nav-btn next-btn" id="nextBtn">&#10095;</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
